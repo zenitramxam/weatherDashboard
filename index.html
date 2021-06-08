@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Weather Dashboard</title>
 </head>
@@ -12,28 +14,28 @@
     </nav>
       <div class="container">
 
-        <p class="search"><strong>Search for a City: </strong></p>
+        <h2 class="search"><strong>Search for a City: </strong></h2>
           <form>            
           <input id="cityInput" type="text" placeholder="Enter city name">
 
             <button class="but" id="searchButton">Search</button>
           </form>
               <form id="history"></form>
-
+      </div>
         <div class="chosenCity">
-            <span id="searchedCity"></span>
+            <h3 id="searchedCity"></h3>
               <img id="currentImage" alt=""> <!--src="placeholder"-->
                 <div class="block">
-                    <p id="temp"></p>
+                    <p>Temp: <div id="temp"></div></p>
                 </div>
                 <div class="block">
-                    <p id="wind"></p>
+                    <p>Wind: <div id="wind"></div></p>
                 </div>
                 <div class="block">
-                    <p id="humid"></p>
+                    <p>Humidity: <div id="humid"></div></p>
                 </div>
                 <div class="block">
-                    <p id="uv"></p>
+                    <p>UV Index: <div id="uv"></div></p>
                 </div>
         </div>
         <div class ="forecast">
@@ -46,7 +48,6 @@
             <div class ="day4"></div>
             <div class ="day5"></div>
         </div>
-      </div>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="./assets/js/script.js"></script>
 </body>

@@ -1,10 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    margin-top: 1%;
+    padding-left: 1%;
+    width: 20%;
+}
+.container, .chosenCity {
+    display: inline-block;
+}
+.block {
+    padding-bottom: 30px;
+}
+#searchButton {
+    background-color: #2590f5;
+    color: white;
+}
+
+.but, input {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    height: 30px;
+    width: 90%;
+    border-radius: 4px;
+}
+
+.but {
+    height: 30px;
+    width: 90%;
+    border-radius: 4px;
+}
+
 .title {
     text-align: center;
     font-weight: bold;
     font-size: 30px;
-    color: blue;
+    color: white;
     padding-top: 2px;
+    background-color: blue;
 }
 .chosenCity {
-    border-style: round;
+    float: right;
+    background-color: #cee3f7;
+    border: 3px solid black;
+    width: 78%;
+    height: 300px;
+    margin-top: 1.2%;
+    margin-right: 2%;
 }
