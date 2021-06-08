@@ -47,9 +47,64 @@ input {
 .chosenCity {
     float: right;
     background-color: #cee3f7;
-    border: 3px solid black;
+    border: 2px solid black;
     width: 78%;
-    height: 300px;
+    height: 320px;
     margin-top: 1.2%;
     margin-right: 2%;
+}
+
+.forecast {
+    margin-top: 15.5%;
+    width: 78%;
+    margin-left: 20%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.space {
+    justify-content: space-evenly;
+}
+
+.day1 {
+    display: flex;
+    border: 3px solid black;
+    width: 18%;
+}
+
+.day2 {
+    display: flex;
+    border: 3px solid black;
+    width: 18%;
+}
+
+.day3 {
+    display: flex;
+    border: 3px solid black;
+    width: 18%;
+}
+
+.day4 {
+    display: flex;
+    border: 3px solid black;
+    width: 18%;
+}
+
+.day5 {
+    display: flex;
+    border: 3px solid black;
+    width: 18%;
+}
+
+.inline, .day1, .day2, .day3, .day4, .day5 {
+    display: flex;
+    
+}
+
+.inline {
+    border: 3px solid black;
+    width: 78%;
+    margin-left: 20%;
+    height: 250px;
+    padding-bottom: 1%;
 }

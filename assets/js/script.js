@@ -8,11 +8,13 @@ var searchedCity = document.querySelector('#searchedCity');
 var currentTemp = document.querySelector('#temp');
 var currentHumid = document.querySelector('#humid');
 var currentWind = document.querySelector('#wind')
+var currentUv = document.querySelector('#uv');
+var cityList=[];
 
 function getWeather(event) {
     event.preventDefault();
-    city =cityInput.value;
-    currentWeather(city);
+      city =cityInput.value;
+        currentWeather(city);
 }
 
 function currentWeather(city){
@@ -34,11 +36,17 @@ function currentWeather(city){
             $(currentWind).html(windMph+"MPH");
             $(currentHumid).html(response.main.humidity+"%");
           UVIndex(response.coord.lon, response.coord.lat);
-          forecast(response.id);
-
-
 
       })
 }
-
+function UVIndex(ln,lt) {
+    var uvURL="https://api.openweathermap.org/data/2.5/uvi?appid="+ APIKey + "&lat="+ lt + "&lon=" + ln;
+    $.ajax({
+        url:uvURL,
+        method:"GET"
+    })
+    .then(function(response) {
+        $(currentUv).html(response.value);
+    });
+}
 searchButt.addEventListener("click", getWeather);
