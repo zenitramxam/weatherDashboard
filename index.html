@@ -11,13 +11,18 @@
         <div class="title">Weather Dashboard</div>
     </nav>
       <div class="container">
-        <p class="search">Search for a City: </p>
+
+        <p class="search"><strong>Search for a City: </strong></p>
+          <form>            
           <input id="cityInput" type="text" placeholder="Enter city name">
+
             <button class="but" id="searchButton">Search</button>
+          </form>
               <form id="history"></form>
+
         <div class="chosenCity">
             <span id="searchedCity"></span>
-              <img id="currentImage" src="placeholder" alt="">
+              <img id="currentImage" alt=""> <!--src="placeholder"-->
                 <div class="block">
                     <p id="temp"></p>
                 </div>
@@ -42,5 +47,7 @@
             <div class ="day5"></div>
         </div>
       </div>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
