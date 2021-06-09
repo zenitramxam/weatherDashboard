@@ -85,20 +85,8 @@ function UVIndex(ln,lt) {
         $(currentUv).html(response.value);
     });
 }
-/*
-function forecast(cityid) {
-    var forecastURL="https://api.openweathermap.org/data/2.5/forecast?id="+ cityid + "&appid=" +APIKey;
-      $.ajax({
-        url:forecastURL,
-        method:"GET"
-    })
-    .then(function(response){
-        console.log(response);
-    })
-}
-*/
+
 function forecast(cityid){
-    //var dayover= false;
     var forcastURL="https://api.openweathermap.org/data/2.5/forecast?id="+cityid+"&appid="+APIKey;
     $.ajax({
         url:forcastURL,
