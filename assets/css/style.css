@@ -108,3 +108,20 @@ input {
     height: 250px;
     padding-bottom: 1%;
 }
+
+ul {
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+button {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.addedSearch {
+    background-color: #2590f5;
+    color: white;
+    width: 50%;
+    text-align: center;
+}

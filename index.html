@@ -5,6 +5,7 @@
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     -->
+    
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Weather Dashboard</title>
 </head>
@@ -12,7 +13,7 @@
     <nav class="navbar">
         <div class="title">Weather Dashboard</div>
     </nav>
-      <div class="container">
+      <div class="container" id="searchBar">
 
         <h2 class="search"><strong>Search for a City: </strong></h2>
           <form>            
@@ -20,7 +21,8 @@
 
             <button class="but" id="searchButton">Search</button>
           </form>
-              <form id="history"></form>
+            <ul class= "group" id="history"></ul>  
+            <form id="history"></form>
       </div>
         <div class="chosenCity">
             <h3 id="searchedCity"></h3>
