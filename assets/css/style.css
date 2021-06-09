@@ -66,33 +66,28 @@ input {
     justify-content: space-evenly;
 }
 
-.day1 {
-    display: flex;
-    border: 3px solid black;
+#day1 {
+    margin-top: 20px;
     width: 18%;
 }
 
-.day2 {
-    display: flex;
-    border: 3px solid black;
+#day2 {
+    margin-top: 20px;
     width: 18%;
 }
 
-.day3 {
-    display: flex;
-    border: 3px solid black;
+#day3 {
+    margin-top: 20px;
     width: 18%;
 }
 
-.day4 {
-    display: flex;
-    border: 3px solid black;
+#day4 {
+    margin-top: 20px;
     width: 18%;
 }
 
-.day5 {
-    display: flex;
-    border: 3px solid black;
+#day5 {
+    margin-top: 20px;
     width: 18%;
 }
 
